@@ -1,11 +1,17 @@
 # Kaliza Web
 
-The Kaliza web application is the supporting visual workspace for a WhatsApp-first agentic platform. It should not duplicate the primary WhatsApp control experience.
+Supporting web workspace for Kaliza. WhatsApp is the primary user control interface; this application focuses on visual, document-heavy and administrative experiences that are difficult to handle in chat.
 
-## Product and interface blueprint
+## Start here
+- [Master System Architecture](docs/MASTER_SYSTEM_ARCHITECTURE.md) — shared product and platform architecture.
+- [Frontend Developer Specification](docs/FRONTEND_DEVELOPER_SPEC.md) — screen, interaction, API, security and acceptance requirements.
+- [Legacy blueprint pointer](docs/FRONTEND_BLUEPRINT.md) — retained path for repository history; see the developer specification for current detailed requirements.
 
-See [docs/FRONTEND_BLUEPRINT.md](docs/FRONTEND_BLUEPRINT.md).
+## Project status
+This is a greenfield blueprint. No existing Claude-built frontend or implemented feature is assumed. The UI must consume backend APIs and must not own agent orchestration, task authority, permissions, connector secrets or billing calculations.
 
-## Current status
-
-This repository is being initialized from the approved product and architecture blueprint. The blueprint is a starting specification, not a claim that the UI is implemented or connected to a live backend.
+## Product constraints
+- WhatsApp remains the primary control channel.
+- Keep the web application focused and relatively small.
+- Business Growth is first; Career Growth is future scope.
+- Both channels share the same backend conversations, tasks, approvals and files.
